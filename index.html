@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date Picker Example</title>
+	<style>
+		#datepicker {
+			display: none;
+			position: absolute;
+			top: 30px;
+			left: 0;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			padding: 10px;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body>
+	<button id="datepicker-btn">Choose a Date</button>
+	<div id="datepicker">
+		<input type="date">
+	</div>
+	<script>
+		const datepickerBtn = document.getElementById('datepicker-btn');
+		const datepicker = document.getElementById('datepicker');
+		
+		datepickerBtn.addEventListener('click', () => {
+			datepicker.style.display = 'block';
+		});
+	</script>
+</body>
+</html>
